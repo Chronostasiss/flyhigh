@@ -12,6 +12,9 @@
         @include('components.hero.hero')
         @include('components.about.about')
         @include('components.features.features')
+        @include('components.about.gallery')
+        @include('components.faq.faq')
+        @include('components.footer.footer')
     </div>
 </body>
 </html>
