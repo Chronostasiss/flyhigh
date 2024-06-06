@@ -25,71 +25,48 @@
 
 
 <section class="relative bg-blueGray-50">
-
-    <div class="h-screen font-sans flex flex-col items-center justify-center" style="background-image: url('images/plane1.jpg'); background-size: cover; background-position: center;">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="lg:grid lg:grid-cols-12 lg:gap-8 pt-12 lg:pt-0">
-            <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
-              <div class="">
-                <div class="flex flex-col items-center justify-center">
-                  <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-4xl">
-                    <p class="sm:block">Find the best deals</p>
-                    <span class="text-indigo-300 md:block">on flights around the world</span>
-                    <p class="text-indigo-600 md:block">with our airplane ticketing service.</p>
-                  </h1>
-                </div>
-                <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-                  <button class="inline-flex items-center text-white bg-indigo-600 justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full sm:w-auto">Search Flights</button>
-                  <button class="inline-flex hover:ring-indigo-400 hover:bg-indigo-600 items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 mt-3 w-full sm:mt-0 sm:ml-3 text-white sm:w-auto">Create Account</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-16 ml-6 sm:mt-24 lg:mt-0 lg:col-span-5">
-              <p class="text-base ml-12 text-white sm:text-xl lg:text-lg xl:text-xl">
-                Plan your next journey with ease. With our service, you can explore destinations, compare prices, and book flights hassle-free.
-              </p>
-
-              <div class="mt-14">
-                <div class="grid grid-cols-3 gap-10 sm:gap-6 xl:gap-8">
-                    
-                  <div class="text-center sm:flex sm:items-center sm:justify-center">
-                    <div class="sm:flex-shrink-0">
-                      <div class="flow-root">
-                        <div class="inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Daily Deals</div>
-                        <p class="text-3xl font-bold text-white">$99+</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="text-center sm:flex sm:items-center sm:justify-center">
-                    <div class="sm:flex-shrink-0">
-                      <div class="flow-root">
-                        <div class="inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Destinations</div>
-                        <p class="text-3xl font-bold ml-4 text-white">70+</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="text-center sm:flex sm:items-center sm:justify-center">
-                    <div class="sm:flex-shrink-0">
-                      <div class="flow-root">
-                        <div class="inline-flex items-center justify-center px-4 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Customers</div>
-                        <p class="text-3xl font-bold ml-4 text-white">500K+</p>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-
-          </div>
+    <div class="h-screen font-sans flex items-center justify-between px-8" style="background-image: url('images/plane1.jpg'); background-size: cover; background-position: center;">
+        <div class="w-1/2 pl-32">
+        <div>
+            <h1 class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-3xl xl:text-4xl">
+            <p class="sm:block">Find the best deals</p>
+            <span class="text-indigo-300 md:block">on flights around the world</span>
+            <p class="text-indigo-600 md:block">with our airplane ticketing service.</p>
+            </h1>
         </div>
-      </div>
-
-      
+        <div>
+            <div class="w-full mt-10 sm:flex sm:justify-center lg:justify-start">
+                <a href="{{route('dashboard')}}" class="inline-flex items-center text-white bg-indigo-600 hover:bg-indigo-800 justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full sm:w-auto">Search Flights</a>
+                <a href="{{route('register')}}" class="ml-2 inline-flex items-center text-white bg-indigo-600 hover:bg-indigo-800 justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full sm:w-auto">Create Account</a>
+            </div>
+        </div>
+        </div>
+        <div class="w-1/2 ml-6 mr-32 bg-[#6875f550] h-[40vh] rounded-xl flex flex-col items-center justify-center">
+        <div class="bg-transparent">
+            <p class="text-3xl font-semibold text-white mx-12">
+                Plan your next journey with ease. With our service, you can explore destinations, compare prices, and book flights hassle-free.
+            </p>
+        </div>
+        <div class="flex bg-transparent w-full mt-12 justify-between">
+            <div class="w-fit px-12 flex items-center flex-col">
+                <div class="inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Daily Deals</div>
+                <p class="text-3xl font-bold text-white">$99+</p>
+            </div>
+            <div class="w-fit px-12 flex items-center flex-col">
+                <div class="inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Destinations</div>
+                <p class="text-3xl font-bold ml-4 text-white">70+</p>
+            </div>
+            <div class="w-fit px-12 flex items-center flex-col">
+                <div class="inline-flex items-center justify-center px-4 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Customers</div>
+                <p class="text-3xl font-bold ml-4 text-white">500K+</p>
+            </div>
+            <div class="w-fit px-12 flex items-center flex-col">
+                <div class="inline-flex items-center justify-center px-4 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Partners</div>
+                <p class="text-3xl font-bold ml-4 text-white">20+</p>
+            </div>
+        </div>
+        </div>
+    </div>  
     <section class="pb-10 bg-blueGray-200 -mt-24">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap">
