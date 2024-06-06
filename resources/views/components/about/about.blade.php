@@ -1,4 +1,4 @@
-<div class='px-10 pb-4 pt-[10rem] mb-[10rem] w-full mx-auto md:mx-[20px] h-[50vh]' id="about">
+<div class='px-10 pb-4 pt-[10rem] mb-[10rem] w-full h-[50vh]' id="about">
     <div class='max-w-[1240px] mx-auto grid md:grid-cols-2'>
         <!-- Right side: Image -->
         <div class='flex flex-col justify-center px-3 md:order-2'>
