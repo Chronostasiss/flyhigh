@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ticket;
 use App\Models\TicketPurchased;
 use Illuminate\Http\Request;
 
@@ -24,7 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $data = Ticket::all();
+        return view('dashboard', compact('data'));
     }
 
     public function tickettest() {
