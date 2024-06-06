@@ -49,7 +49,7 @@
         </div>
         <div class="flex bg-transparent w-full mt-12 justify-between">
             <div class="w-fit px-12 flex items-center flex-col">
-                <div class="inline-flex items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Daily Deals</div>
+                <p class="inline-flex text-nowrap items-center justify-center px-3 py-0.5 text-sm font-medium leading-5 text-indigo-600 bg-indigo-200 rounded-full">Daily Deals</p>
                 <p class="text-3xl font-bold text-white">$99+</p>
             </div>
             <div class="w-fit px-12 flex items-center flex-col">

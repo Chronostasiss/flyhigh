@@ -3,25 +3,25 @@
     <p class="text-center mb-8 text-gray-600 text-xl">
         Discover breathtaking destinations with our carefully curated gallery. Each image tells a story of adventure, culture, and unforgettable experiences. Get inspired for your next journey with us.
     </p>
-    <div class="-m-1 flex flex-wrap md:-m-2">
+    <div class="-m-1 flex flex-wrap md:-m-2 mb-4">
         <div class="flex w-1/2 flex-wrap">
             <div class="w-1/2 p-1 md:p-2">
                 <img
                     alt="gallery"
                     class="block h-full w-full rounded-lg object-cover object-center"
-                    src="images/plane1.jpg" />
+                    src="images/maldives.jpg" />
             </div>
             <div class="w-1/2 p-1 md:p-2">
                 <img
                     alt="gallery"
                     class="block h-full w-full rounded-lg object-cover object-center"
-                    src="images/plane1.jpg" />
+                    src="images/belgium.jpg" />
             </div>
             <div class="w-full p-1 md:p-2">
                 <img
                     alt="gallery"
                     class="block h-full w-full rounded-lg object-cover object-center"
-                    src="images/plane1.jpg" />
+                    src="images/gion.jpg" />
             </div>
         </div>
         <div class="flex w-1/2 flex-wrap">
@@ -29,19 +29,19 @@
                 <img
                     alt="gallery"
                     class="block h-full w-full rounded-lg object-cover object-center"
-                    src="images/plane1.jpg" />
+                    src="images/greece.jpg" />
             </div>
             <div class="w-1/2 p-1 md:p-2">
                 <img
                     alt="gallery"
                     class="block h-full w-full rounded-lg object-cover object-center"
-                    src="images/plane1.jpg" />
+                    src="images/chongqing.jpg" />
             </div>
             <div class="w-1/2 p-1 md:p-2">
                 <img
                     alt="gallery"
                     class="block h-full w-full rounded-lg object-cover object-center"
-                    src="images/plane1.jpg" />
+                    src="images/bali.jpg" />
             </div>
         </div>
     </div>

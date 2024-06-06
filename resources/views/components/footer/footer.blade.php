@@ -2,10 +2,10 @@
   <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div> 
-      <img src="#" class="mr-5 h-6 sm:h-9" alt="logo" />
-        <p class="max-w-xs mt-4 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
-        </p>
+        <i class="fas fa-plane-departure text-4xl pr-3"></i>
+        {{-- <p class="max-w-xs mt-4 text-sm text-gray-600">
+          FlyHigh
+        </p> --}}
         <div class="flex mt-8 space-x-6 text-gray-600">
           <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
             <span class="sr-only"> Instagram </span>

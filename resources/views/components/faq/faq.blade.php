@@ -1,6 +1,6 @@
-<div class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen">
+<div class="max-w-screen-xl mx-auto px-5 pb-10 bg-white min-h-sceen">
 	<div class="flex flex-col items-center">
-		<h2 class="font-bold text-5xl mt-5 tracking-tight">
+		<h2 class="font-bold text-5xl mt-12 pb-5 px-5 rounded-md tracking-tight">
 			FAQ
 		</h2>
 		<p class="text-neutral-500 text-xl mt-3">

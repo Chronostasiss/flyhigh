@@ -5,7 +5,7 @@
     
     @include('components.hero.hero')
     @include('components.about.about')
-    @include('components.features.features')
+    {{-- @include('components.features.features') --}}
     @include('components.about.gallery')
     @include('components.faq.faq')
 </div>
