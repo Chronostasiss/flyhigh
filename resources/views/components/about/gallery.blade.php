@@ -1,4 +1,4 @@
-<div class="container mx-auto my-auto px-5 py-2 lg:px-32 lg:pt-24 h-[100vh]">
+<div class="container mx-auto my-auto px-5 py-2 lg:px-32 lg:pt-24 h-[100vh]" id="gallery">
     <h1 class="text-3xl font-bold text-center mb-8">Explore Our Destinations</h1>
     <p class="text-center mb-8 text-gray-600 text-xl">
         Discover breathtaking destinations with our carefully curated gallery. Each image tells a story of adventure, culture, and unforgettable experiences. Get inspired for your next journey with us.

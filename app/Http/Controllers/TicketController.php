@@ -16,11 +16,13 @@ class TicketController extends Controller
         Route::post('/tickets', [self::class, 'store']);
         Route::put('/tickets/{id}', [self::class, 'update']);
         Route::delete('/tickets/{id}', [self::class, 'destroy']);
+        Route::post('/tickets/search', [self::class, 'search'])->name('tickets.search');
+
     }
 
     public function index()
     {
-        $tickets = TicketPurchased::all();
+        $tickets = TicketPurchased::orderBy('departure_time', 'asc')->get();
         return response()->json($tickets);
     }
 
@@ -63,5 +65,21 @@ class TicketController extends Controller
         } else {
             return response()->json(['message' => 'Ticket not found'], 404);
         }
+    }
+
+    public static function getCities()
+    {
+        return [
+            ['city' => 'Jakarta', 'code' => 'CGK', 'country' => 'Indonesia'],
+            ['city' => 'Kuala Lumpur', 'code' => 'KUL', 'country' => 'Malaysia'],
+            ['city' => 'Singapore', 'code' => 'SIN', 'country' => 'Singapore'],
+            ['city' => 'Bangkok', 'code' => 'BKK', 'country' => 'Thailand'],
+            ['city' => 'Manila', 'code' => 'MNL', 'country' => 'Philippines'],
+            ['city' => 'Hanoi', 'code' => 'HAN', 'country' => 'Vietnam'],
+            ['city' => 'Ho Chi Minh City', 'code' => 'SGN', 'country' => 'Vietnam'],
+            ['city' => 'Phnom Penh', 'code' => 'PNH', 'country' => 'Cambodia'],
+            ['city' => 'Yangon', 'code' => 'RGN', 'country' => 'Myanmar'],
+            ['city' => 'Bandar Seri Begawan', 'code' => 'BWN', 'country' => 'Brunei']
+        ];
     }
 }

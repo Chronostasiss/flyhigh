@@ -25,8 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $data = Ticket::all();
-        return view('dashboard', compact('data'));
+        $data = Ticket::orderBy('departure_time', 'asc')->get();
+        $cities = TicketController::getCities();
+        return view('dashboard', compact('data', 'cities'));
     }
 
     public function tickettest() {

@@ -19,7 +19,7 @@
                     <a href="{{route('home')}}#about" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">About</a>
                 </li>
                 <li>
-                    <a href="{{route('home')}}#features" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
+                    <a href="{{route('home')}}#gallery" class="block py-2 px-3 text-gray-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Gallery</a>
                 </li>
                 @guest
                     @if (Route::has('login'))
