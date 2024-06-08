@@ -41,7 +41,7 @@
             </div>
         </div>
         </div>
-        <div class="w-1/2 ml-6 mr-32 bg-[#6875f550] h-[40vh] rounded-xl flex flex-col items-center justify-center">
+        <div class="w-1/2 ml-6 mr-32 bg-[#e4e6f650] h-[40vh] rounded-xl flex flex-col items-center justify-center">
         <div class="bg-transparent">
             <p class="text-3xl font-semibold text-white mx-12">
                 Plan your next journey with ease. With our service, you can explore destinations, compare prices, and book flights hassle-free.

@@ -34,8 +34,14 @@ class HomeController extends Controller
         return view('tickettest');
     }
 
+    public function bookings() {
+        $cities = TicketController::getCities();
+        return view('bookings');
+    }
+
     public function purchase_success(Request $request) {
         $ticket = TicketPurchased::find($request->get('ticket_id'));
         return view ('purchase_success')->with('ticket', $ticket);
     }
+    
 }

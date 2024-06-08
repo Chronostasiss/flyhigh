@@ -8,6 +8,7 @@ Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])-
 Route::get('/welcome', [App\Http\Controllers\HomeController::class, 'welcome'])->name('welcome');
 Route::get('/ticket-test', [App\Http\Controllers\HomeController::class, 'tickettest'])->name('tickettest');
 Route::get('/purchased', [App\Http\Controllers\HomeController::class, 'purchase_success'])->name('purchase_success');
+Route::get('/bookings', [App\Http\Controllers\HomeController::class, 'bookings'])->name('bookings');
 
 Route::get('/', function () {
     return view('welcome');
