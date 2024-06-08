@@ -44,14 +44,25 @@
         <div class="mt-4 bg-gray-100 flex flex-row flex-wrap md:flex-nowrap justify-start items-baseline rounded-bl-xl rounded-br-xl">
             <div class="flex mx-6 py-4 flex-row flex-wrap">
                 <svg class="w-12 h-10 p-2 mx-2 self-center bg-gray-400 rounded-full fill-current text-white" viewBox="0 0 64 64" pointer-events="all" aria-hidden="true" role="presentation"><path d="M43.389 38.269L29.222 61.34a1.152 1.152 0 01-1.064.615H20.99a1.219 1.219 0 01-1.007-.5 1.324 1.324 0 01-.2-1.149L26.2 38.27H11.7l-3.947 6.919a1.209 1.209 0 01-1.092.644H1.285a1.234 1.234 0 01-.895-.392l-.057-.056a1.427 1.427 0 01-.308-1.036L1.789 32 .025 19.656a1.182 1.182 0 01.281-1.009 1.356 1.356 0 01.951-.448l5.4-.027a1.227 1.227 0 01.9.391.85.85 0 01.2.252L11.7 25.73h14.5L19.792 3.7a1.324 1.324 0 01-.2-1.149A1.219 1.219 0 0121 2.045h7.168a1.152 1.152 0 011.064.615l14.162 23.071h8.959a17.287 17.287 0 017.839 1.791Q63.777 29.315 64 32q-.224 2.685-3.807 4.478a17.282 17.282 0 01-7.84 1.793h-9.016z"></path></svg>
-                <div class="text-sm mx-2 flex flex-col">
+                <div class="text-sm mx-2 flex flex-col mr-4">
                     <p class="">Standard Ticket</p>
                     <p class="font-bold">${{ $data['price'] }}</p>
                     <p class="text-xs text-gray-500">Price per adult</p>
                 </div>
-                <form action="{{route('book')}}" method="get">
-                    <input type="hidden" name="ticket_id" id="ticket_id" value="{{$data->id}}">
-                    <button type="submit" class="w-32 h-11 rounded flex border-solid border bg-white mx-2 justify-center place-items-center book-button"><div class="">Book</div></button>
+                <form action="{{route('reschedule_booking', ['id' => $booking_id, 'new_ticket_id' => $data->id])}}" method="POST">
+                    @csrf
+                    @method('PUT')
+                    <div class="flex items-center pl-4 border-solid border-l border-gray-500">
+                        <div class="mr-4">
+                            <label for="chosen_seat" class="block text-sm font-medium text-gray-700">Choose Seat</label>
+                            <select name="chosen_seat" id="chosen_seat" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm" required>
+                                @foreach ($data->available_seats as $seat)
+                                    <option value="{{$seat}}">{{$seat}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <button type="submit" class="w-32 h-11 rounded flex border-solid border bg-white mx-2 justify-center place-items-center book-button"><div class="">Reschedule</div></button>
+                    </div>
                 </form>
             </div>
         </div>

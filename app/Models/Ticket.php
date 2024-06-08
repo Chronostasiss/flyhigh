@@ -16,4 +16,10 @@ class Ticket extends Model
     protected $fillable = [
         'airline_name', 'flight_code', 'flight_type', 'baggage', 'price', 'departure_time', 'arrival_time', 'available_seats'
     ];
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
+
 }

@@ -18,8 +18,15 @@
     <script src="{{ asset('node_modules/alpinejs/dist/alpine.js') }}"></script>
 </head>
 <body>
+    @if(session('alert'))
+    <script>
+    alert('{{ session('alert') }}');
+    </script>
+    @endif
     @include('components.navbar.navbar')
-    @yield('content')
+    <div class="min-h-[55vh]">
+        @yield('content')
+    </div>
     @include('components.footer.footer')
 </body>
 </html>
