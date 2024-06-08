@@ -7,11 +7,9 @@
     <div class="mx-36">
         <h2 class="text-2xl font-bold mt-6">Available Flights</h2>
         @if(count($data) < 1)
-  
-        <div class="p-6 mt-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">No available flights for reschedule.</h5>
-        </div>
-
+            <div class="p-6 mt-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">No available flights for reschedule.</h5>
+            </div>
         @endif
         @foreach ($data as $item)
         @include('components.reschedule.ticket', ["data" => $item, "booking_id" => $booking_id])
