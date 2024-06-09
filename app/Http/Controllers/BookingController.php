@@ -77,6 +77,7 @@ class BookingController extends Controller
             $new_ticket->save();
         }
         $booking_data->ticket_id = $new_ticket_id;
+        $booking_data->save();
         return redirect()->route('bookings')->with('alert', "Reschedule successful");
     }
 }
